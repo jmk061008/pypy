@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>나의 이상형은? — 19+ 이상형 테스트</title>
+<meta name="description" content="심리학 기반 19+ 연애 성향 검사 · 16가지 밤의 유형, S/M 성향, 애착 유형, 사주까지">
+<meta property="og:title" content="나의 이상형은? — 19+ 연애 성향 검사">
+<meta property="og:description" content="당신을 무너뜨리는 사람은 누구일까? 16유형 × S/M 성향 × 애착 유형 × 사주">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e0709">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E💋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0e0709;--card:#1f1015cc;--line:#3a1e27;--wine:#8e1d3c;--rose:#e0607e;--gold:#e6b98a;--text:#f6e9ec;--mute:#b49aa2}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Noto Sans KR',sans-serif;color:var(--text);min-height:100vh;overflow-x:hidden;
+    background:radial-gradient(1200px 700px at 80% -10%,#4a0f24 0%,transparent 60%),radial-gradient(900px 600px at -10% 110%,#3a0c1d 0%,transparent 60%),var(--bg)}
+  .grain{position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .wrap{max-width:540px;margin:0 auto;padding:28px 20px 60px;min-height:100vh;display:flex;flex-direction:column}
+  .wrap.wide{max-width:980px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+  .logo{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:18px}.logo span{color:var(--rose)}
+  .badge{border:1.5px solid var(--rose);color:var(--rose);border-radius:50%;width:38px;height:38px;display:grid;place-items:center;font-weight:700;font-size:13px}
+  .screen{display:none;flex:1;flex-direction:column;animation:fade .45s ease}.screen.on{display:flex}
+  @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .gate{justify-content:center;text-align:center;gap:18px}
+  .gate .big{font-family:'Nanum Myeongjo',serif;font-size:64px;font-weight:800;color:var(--rose);line-height:1}
+  .gate h2{font-size:24px}.gate p{color:var(--mute);font-size:14px;line-height:1.7}
+  .btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:16px;padding:17px 20px;border-radius:14px;width:100%;transition:transform .15s}
+  .btn:active{transform:scale(.98)}
+  .btn.primary{background:linear-gradient(135deg,var(--wine),var(--rose));color:#fff;box-shadow:0 10px 30px -10px #e0607e88}
+  .btn.ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+  .btn.sm{width:auto;padding:10px 14px;font-size:13px}
+  .stack{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .intro{justify-content:center;gap:22px}
+  .kicker{color:var(--gold);font-size:13px;letter-spacing:.25em}
+  .intro h1{font-family:'Nanum Myeongjo',serif;font-size:44px;line-height:1.2;font-weight:800}.intro h1 em{font-style:normal;color:var(--rose)}
+  .intro .lead{color:var(--mute);line-height:1.8;font-size:15px}
+  .meta{display:flex;gap:14px;color:var(--mute);font-size:13px;flex-wrap:wrap}.meta b{color:var(--text);font-weight:500}
+  .form{gap:18px}.form h2{font-family:'Nanum Myeongjo',serif;font-size:28px;line-height:1.4}
+  .hint{color:var(--mute);font-size:14px;line-height:1.7}
+  label.l{font-size:13px;color:var(--gold);letter-spacing:.08em;display:block;margin-bottom:8px}
+  input[type=date],input[type=text]{width:100%;background:var(--card);border:1px solid var(--line);color:var(--text);padding:15px 14px;border-radius:12px;font:inherit;font-size:15px;outline:none;color-scheme:dark}
+  input:focus{border-color:var(--rose)}
+  .seg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .seg button{background:var(--card);border:1px solid var(--line);color:var(--mute);padding:13px;border-radius:12px;font:inherit;font-size:14px;cursor:pointer}
+  .seg button.on{border-color:var(--rose);color:var(--text);background:#8e1d3c44}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--mute);line-height:1.6;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer}
+  .consent input{margin-top:3px;accent-color:var(--rose);width:18px;height:18px;flex:none}
+  .err{color:#ff8fa5;font-size:13px;min-height:18px}
+  .progress{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:10px}
+  .progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--wine),var(--rose));transition:width .4s}
+  .qnum{color:var(--gold);font-size:13px;letter-spacing:.15em;margin:14px 0 6px;display:flex;justify-content:space-between}
+  .qnum small{color:var(--mute);letter-spacing:0}
+  .qtext{font-family:'Nanum Myeongjo',serif;font-size:23px;line-height:1.55;font-weight:700;margin:10px 0 34px;word-break:keep-all;min-height:110px}
+  .likert{display:flex;justify-content:space-between;align-items:center;gap:6px}
+  .likert button{border-radius:50%;border:2px solid var(--line);background:transparent;cursor:pointer;transition:.2s;flex:none}
+  .likert button:nth-child(1),.likert button:nth-child(5){width:56px;height:56px}
+  .likert button:nth-child(2),.likert button:nth-child(4){width:44px;height:44px}
+  .likert button:nth-child(3){width:34px;height:34px}
+  .likert button:nth-child(1),.likert button:nth-child(2){border-color:#6b5a60}
+  .likert button:nth-child(4),.likert button:nth-child(5){border-color:var(--rose)}
+  .likert button.picked{background:var(--rose);border-color:var(--rose);transform:scale(1.08)}
+  .likert button:nth-child(-n+2).picked{background:#8a7a80;border-color:#8a7a80}
+  .lk-lab{display:flex;justify-content:space-between;color:var(--mute);font-size:12px;margin-top:12px}
+  .back{margin-top:34px;background:none;border:0;color:var(--mute);font:inherit;font-size:13px;cursor:pointer;align-self:flex-start}
+  .loading{justify-content:center;align-items:center;text-align:center;gap:20px}
+  .heart{width:70px;height:70px;animation:beat 1s infinite}
+  @keyframes beat{0%,100%{transform:scale(1)}30%{transform:scale(1.18)}60%{transform:scale(.95)}}
+  .loading p{color:var(--mute)}
+  .result{gap:16px}
+  .rcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 22px;text-align:center;position:relative;overflow:hidden}
+  .rcard::before{content:"";position:absolute;inset:-40% -20% auto;height:280px;background:radial-gradient(circle,#e0607e44,transparent 70%)}
+  .rcard>*{position:relative}
+  .rlabel{color:var(--gold);font-size:12px;letter-spacing:.25em}
+  .code{font-family:'Nanum Myeongjo',serif;font-size:54px;font-weight:800;letter-spacing:.12em;margin-top:10px;background:linear-gradient(135deg,#fff,var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .remoji{font-size:40px;margin:6px 0}
+  .rname{font-family:'Nanum Myeongjo',serif;font-size:28px;font-weight:800;line-height:1.3;word-break:keep-all}
+  .rsub{color:var(--rose);font-size:14px;margin-top:6px;word-break:keep-all}
+  .chips{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+  .chip{font-size:13px;padding:8px 13px;border-radius:99px;background:#8e1d3c55;border:1px solid #8e1d3c;font-weight:500}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:10px}
+  .tags span{font-size:12px;padding:6px 11px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+  .sec{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+  .sec h3{font-size:13px;color:var(--gold);letter-spacing:.12em;font-weight:500;margin-bottom:12px}
+  .sec h4{font-size:16px;margin:16px 0 6px;color:var(--text)}.sec h4:first-of-type{margin-top:0}
+  .sec p,.sec li{font-size:15px;line-height:1.8;color:#e9d6db;word-break:keep-all}
+  .sec p+p{margin-top:10px}
+  .sec ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+  .sec li::before{content:"♥";color:var(--rose);margin-right:8px;font-size:11px}
+  .sec ul.x li::before{content:"✕";color:#ff8fa5}
+  .k{color:var(--rose);font-weight:700}
+  .why{margin-top:12px;font-size:13px!important;color:var(--mute)!important;line-height:1.7!important;border-left:2px solid var(--wine);padding-left:10px}
+  .big2{font-family:'Nanum Myeongjo',serif;font-size:26px;font-weight:800;margin-bottom:4px}
+  .axis{display:flex;flex-direction:column;gap:16px}
+  .ax .top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:7px;color:var(--mute)}.ax .top b{color:var(--text)}
+  .ax .t{height:9px;background:#3a1e27;border-radius:9px;overflow:hidden}
+  .ax .t i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--wine),var(--rose));transition:width 1s ease}
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+  .pillar{border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+  .pillar small{display:block;color:var(--mute);font-size:12px;margin-bottom:6px}
+  .pillar b{font-family:'Nanum Myeongjo',serif;font-size:22px}
+  .pillar em{display:block;font-style:normal;font-size:12px;color:var(--rose);margin-top:4px}
+  .dohwa{margin-top:14px;padding:14px;border-radius:12px;background:#8e1d3c33;border:1px solid #8e1d3c88;font-size:14px;line-height:1.7}
+  .match{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .match div{border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+  .match small{display:block;color:var(--mute);font-size:12px;margin-bottom:6px}
+  .match b{font-size:18px;letter-spacing:.06em}
+  .match span{display:block;font-size:12px;color:var(--mute);margin-top:4px;word-break:keep-all}
+  .refs li{font-size:12.5px!important;color:var(--mute)!important;line-height:1.6!important}
+  .refs li::before{content:"·"!important;color:var(--mute)!important}
+  .saved{font-size:12px;color:var(--mute);text-align:center}
+  .toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);background:#2a1219;border:1px solid var(--rose);padding:12px 18px;border-radius:99px;font-size:14px;opacity:0;transition:.3s;pointer-events:none;z-index:9}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+  .adminbtn{display:none;margin-top:6px}
+  /* admin */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .kpi small{color:var(--mute);font-size:12px}.kpi b{display:block;font-size:26px;margin-top:4px;font-family:'Nanum Myeongjo',serif}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  .dist{display:flex;flex-direction:column;gap:8px}
+  .dr{display:grid;grid-template-columns:120px 1fr 54px;gap:8px;align-items:center;font-size:13px}
+  .dr .t{height:8px;background:#3a1e27;border-radius:8px;overflow:hidden}.dr .t i{display:block;height:100%;background:var(--rose)}
+  .dr .v{text-align:right;color:var(--mute)}
+  .tbl{overflow:auto;max-height:460px;border:1px solid var(--line);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:12px}
+  th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+  th{position:sticky;top:0;background:#1a0d12;color:var(--gold);font-weight:500}
+  .empty{color:var(--mute);font-size:14px;padding:20px;text-align:center}
+  footer{margin-top:28px;text-align:center;color:#6e555c;font-size:11px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="wrap" id="wrap">
+  <header>
+    <div class="logo">나의 <span>이상형</span>은?</div>
+    <div class="badge">19</div>
+  </header>
+
+  <section class="screen gate on" id="s-gate">
+    <div class="big">19+</div>
+    <h2>19세 이상입니까?</h2>
+    <p>이 콘텐츠는 성인 전용입니다.</p>
+    <div class="row2" style="margin-top:10px">
+      <button class="btn primary" id="yes19">네</button>
+      <button class="btn ghost" id="no19">아니요</button>
+    </div>
+  </section>
+
+  <section class="screen gate" id="s-minor">
+    <div class="big" style="font-size:44px">🔒</div>
+    <h2>이용할 수 없어요</h2>
+    <p>19세 이상만 이용할 수 있는 콘텐츠입니다.</p>
+  </section>
+
+  <section class="screen intro" id="s-intro">
+    <div class="kicker">MIDNIGHT PSYCH TEST</div>
+    <h1>당신을 <em>무너뜨리는</em><br>사람은<br>누구일까?</h1>
+    <p class="lead">애착이론·대인관계 원형모형·감각추구 이론 등<br>심리학 연구를 바탕으로 만든 성인 연애 성향 검사.<br>밤의 유형, 성적 취향(S/M), 애착 유형, 사주까지.</p>
+    <div class="meta"><span>문항 <b>30개</b></span><span>소요 <b>약 5분</b></span><span>결과 <b>16유형 × 4취향 × 4애착</b></span></div>
+    <button class="btn primary" id="start">시작하기</button>
+  </section>
+
+  <section class="screen form" id="s-birth">
+    <div class="kicker">STEP 1 · 기본 정보</div>
+    <h2>당신이 태어난 날을<br>알려주세요</h2>
+    <p class="hint" style="margin-top:-8px">일주(태어난 날의 기운)와 띠로 타고난 연애 성향과 도화살을 봐드려요.</p>
+    <div><label class="l">닉네임 (선택 · 저장되지 않음)</label><input type="text" id="nick" maxlength="10" placeholder="결과에 표시될 이름"></div>
+    <div><label class="l">생년월일 (양력)</label><input type="date" id="bdate" min="1930-01-01"></div>
+    <div><label class="l">성별</label>
+      <div class="seg" id="gender"><button data-v="여성">여성</button><button data-v="남성">남성</button><button data-v="선택안함" class="on">선택안함</button></div>
+    </div>
+    <label class="consent"><input type="checkbox" id="consent"><span><b style="color:var(--text)">익명 응답 저장에 동의합니다 (선택)</b><br>문항 응답·결과·성별·출생연도만 연구 자료로 저장되며, 닉네임과 정확한 생년월일은 저장되지 않아요.</span></label>
+    <div class="err" id="err"></div>
+    <button class="btn primary" id="toQuiz">검사 시작하기</button>
+  </section>
+
+  <section class="screen" id="s-quiz">
+    <div class="progress"><i id="bar"></i></div>
+    <div class="qnum"><span id="qnum"></span><small id="qsec"></small></div>
+    <div class="qtext" id="qtext"></div>
+    <div class="likert" id="likert"></div>
+    <div class="lk-lab"><span>전혀 아니다</span><span>보통</span><span>매우 그렇다</span></div>
+    <button class="back" id="back">← 이전 문항</button>
+  </section>
+
+  <section class="screen loading" id="s-loading">
+    <svg class="heart" viewBox="0 0 24 24"><path fill="#e0607e" d="M12 21s-7.5-4.6-10-9.3C.3 8.2 2.3 4 6.3 4c2.3 0 3.9 1.3 5.7 3.4C13.8 5.3 15.4 4 17.7 4c4 0 6 4.2 4.3 7.7C19.5 16.4 12 21 12 21z"/></svg>
+    <p id="loadmsg">분석 중…</p>
+  </section>
+
+  <section class="screen result" id="s-result">
+    <div class="rcard">
+      <div class="rlabel" id="rwho">YOUR NIGHT TYPE</div>
+      <div class="code" id="rcode"></div>
+      <div class="remoji" id="remoji"></div>
+      <div class="rname" id="rname"></div>
+      <div class="rsub" id="rsub"></div>
+      <div class="chips" id="rchips"></div>
+      <div class="tags" id="rtags"></div>
+    </div>
+
+    <div class="sec"><h3>성향 분석</h3><div class="axis" id="raxis"></div></div>
+
+    <div class="sec"><h3>당신의 성격</h3><p id="rpers"></p><ul id="rtraits" style="margin-top:12px"></ul></div>
+
+    <div class="sec"><h3>⛓ 당신의 성적 취향</h3>
+      <div class="big2" id="kName"></div>
+      <p id="kDesc"></p>
+      <div class="axis" style="margin-top:14px" id="kBars"></div>
+      <p class="why" id="kWhy"></p>
+    </div>
+
+    <div class="sec"><h3>🫀 애착 유형</h3>
+      <div class="big2" id="aName"></div>
+      <p id="aDesc"></p>
+      <p class="why">애착이론(Hazan & Shaver, 1987)은 어린 시절 양육자와의 관계 패턴이 성인의 연애에서도 반복된다고 봐요. 이 검사는 Brennan 등(1998)의 2차원 모델(애착 불안 × 애착 회피)과 Bartholomew & Horowitz(1991)의 4범주 구분을 참고했어요.</p>
+    </div>
+
+    <div class="sec"><h3>🌙 밤의 당신</h3><p id="rnight"></p></div>
+
+    <div class="sec"><h3>💘 당신은 이런 유형과 맞습니다</h3>
+      <div class="match">
+        <div><small>밤의 유형</small><b id="mCode"></b><span id="mCodeN"></span></div>
+        <div><small>성적 취향 · 애착</small><b id="mKink" style="font-size:15px"></b><span id="mAttach"></span></div>
+      </div>
+      <p style="margin-top:14px" id="rideal"></p>
+      <p id="mDesc"></p>
+      <p class="why" id="mWhy"></p>
+    </div>
+
+    <div class="sec"><h3>🚫 당신이 피해야 할 사람</h3>
+      <div class="match" style="margin-bottom:14px">
+        <div><small>상극 유형</small><b id="xCode"></b><span id="xCodeN"></span></div>
+        <div><small>위험한 조합</small><b id="xAttach" style="font-size:15px"></b><span id="xKink"></span></div>
+      </div>
+      <p id="xDesc"></p>
+      <h4 style="margin-top:16px">누구에게나 위험한 신호</h4>
+      <ul class="x" id="xFlags"></ul>
+      <p class="why" id="xWhy"></p>
+    </div>
+
+    <div class="sec"><h3>☯ 사주로 보는 연애운</h3>
+      <div class="pillars">
+        <div class="pillar"><small>일주 (나의 본질)</small><b id="sDay"></b><em id="sDayEl"></em></div>
+        <div class="pillar"><small>띠</small><b id="sZodiac"></b><em id="sYear"></em></div>
+      </div>
+      <p id="sStem"></p><p id="sLove"></p>
+      <div class="dohwa" id="sDohwa"></div>
+      <p style="margin-top:14px" id="sMatch"></p>
+    </div>
+
+    <div class="sec"><h3>📚 이론적 근거</h3>
+      <ul class="refs">
+        <li>Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. <i>JPSP, 52</i>(3).</li>
+        <li>Brennan, K. A., Clark, C. L., & Shaver, P. R. (1998). Self-report measurement of adult attachment (ECR).</li>
+        <li>Bartholomew, K., & Horowitz, L. M. (1991). Attachment styles among young adults: A four-category model. <i>JPSP, 61</i>(2).</li>
+        <li>Kiesler, D. J. (1983). The 1982 interpersonal circle. <i>Psychological Review, 90</i>(3). — 지배·복종의 상보성</li>
+        <li>Byrne, D. (1971). <i>The Attraction Paradigm.</i> / Montoya, Horton & Kirchner (2008). 유사성-매력 메타분석.</li>
+        <li>Zuckerman, M. (1994). <i>Behavioral Expressions and Biosocial Bases of Sensation Seeking.</i></li>
+        <li>Sternberg, R. J. (1986). A triangular theory of love. <i>Psychological Review, 93</i>(2).</li>
+        <li>Wismeijer, A. A. J., & van Assen, M. A. L. M. (2013). Psychological characteristics of BDSM practitioners. <i>J. Sexual Medicine, 10</i>(8).</li>
+        <li>Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern. <i>JPSP, 59</i>(1).</li>
+        <li>Paulhus, D. L., & Williams, K. M. (2002). The Dark Triad of personality. <i>J. Research in Personality, 36</i>(6).</li>
+        <li>Gottman, J. M. (1994). <i>What Predicts Divorce?</i> — 관계를 무너뜨리는 4가지 신호</li>
+      </ul>
+      <p class="why">문항은 위 이론을 참고해 새로 작성한 것으로, 표준화·타당화된 심리검사가 아닙니다. 재미와 자기 탐색용으로 활용해 주세요.</p>
+    </div>
+
+    <div class="saved" id="savedNote"></div>
+    <div class="stack">
+      <button class="btn primary" id="share">결과 공유하기</button>
+      <button class="btn ghost" id="retry">다시 검사하기</button>
+    </div>
+  </section>
+
+  <!-- 관리자 -->
+  <section class="screen" id="s-admin" style="gap:14px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><div class="kicker">ADMIN · RESEARCH DATA</div><h2 style="font-family:'Nanum Myeongjo',serif;font-size:26px;margin-top:6px">응답 데이터</h2></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn ghost sm" id="csvCopy">CSV 복사</button>
+        <button class="btn primary sm" id="csvDown">CSV 다운로드</button>
+        <button class="btn ghost sm" id="closeAdmin">← 돌아가기</button>
+      </div>
+    </div>
+    <div id="adminBody"><div class="empty">불러오는 중…</div></div>
+  </section>
+
+  <footer>본 검사와 사주 풀이는 재미를 위한 콘텐츠이며 19세 이상 이용가입니다.<br>성적 취향과 관련된 모든 행위는 성인 간의 명확한 동의를 전제로 합니다.</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= 척도 & 문항 =================
+   ANX 애착불안 · AVD 애착회피 · DOM 지배욕구 · SUB 복종욕구
+   PAC 열정템포(H↔S) · TCH 신체자극(T↔W) · SSK 감각추구(A↔C)
+   r:1 = 역채점 */
+const SCALES={ANX:"애착 불안",AVD:"애착 회피",DOM:"지배 욕구(S)",SUB:"복종 욕구(M)",PAC:"열정 템포",TCH:"신체 감각 선호",SSK:"감각 추구"};
+const ITEMS=[
+ {s:"ANX",t:"연인의 답장이 평소보다 한두 시간만 늦어져도, 혹시 마음이 식은 건 아닐까 하는 생각이 머릿속을 떠나지 않는다."},
+ {s:"DOM",t:"침대 위에서 상대의 숨소리와 반응 하나하나를 내가 조절하고 있다고 느낄 때 가장 흥분된다."},
+ {s:"SSK",t:"차 안이나 여행지의 낯선 숙소처럼, 평소와 전혀 다른 장소에서 보내는 아슬아슬한 밤을 꼭 한번 경험해 보고 싶다."},
+ {s:"AVD",t:"연인이 \"우리 관계에 대해 진지하게 얘기 좀 하자\"고 하면, 그 순간부터 숨이 막히고 자리를 피하고 싶어진다."},
+ {s:"SUB",t:"상대가 확신 있게 나를 리드하고, 나는 그저 따르기만 하면 될 때 오히려 긴장이 풀리고 몸이 더 솔직해진다."},
+ {s:"PAC",t:"정말 강하게 끌리는 사람이라면, 처음 만난 날 밤을 함께 보내는 것도 전혀 이상하지 않다고 생각한다."},
+ {s:"TCH",t:"달콤한 말보다 목덜미에 닿는 숨결, 허리를 감는 손의 체온 같은 신체 감각에 훨씬 강하게 반응한다."},
+ {s:"ANX",t:"연인이 사랑한다고 말해줘도, 내가 정말 그만큼 사랑받을 자격이 있는 사람인지 속으로 의심할 때가 있다."},
+ {s:"DOM",t:"상대에게 낮은 목소리로 \"움직이지 마\", \"나 봐\" 같은 짧은 지시를 내리는 장면을 상상하면 설렌다."},
+ {s:"AVD",t:"아무리 좋아하는 사람이라도 내 약한 모습이나 깊은 속마음까지 보여주는 건 불편하고 꺼려진다."},
+ {s:"SUB",t:"눈가리개를 한 채로 다음에 무엇이 올지 전혀 모르는 상황을 상상하면, 두려움보다 흥분이 먼저 든다."},
+ {s:"SSK",t:"역할극이나 새로운 도구처럼 아직 해보지 않은 것을 연인이 제안하면, 거부감보다 호기심이 먼저 생긴다."},
+ {s:"PAC",r:1,t:"스킨십은 여러 번의 데이트를 거치며 손잡기, 키스, 그다음으로 천천히 진도가 나갈 때 훨씬 더 설렌다."},
+ {s:"TCH",r:1,t:"직접적인 스킨십보다 귓가에 속삭이는 야한 말 한마디나, 새벽에 온 수위 높은 문자 한 줄이 더 흥분된다."},
+ {s:"ANX",t:"연인이 다른 이성과 즐겁게 대화하는 모습을 보면, 내가 밀려날지도 모른다는 불안에 그날 하루가 망가진다."},
+ {s:"DOM",t:"상대가 참다가 결국 내 손끝에 무너지고 애원하는 모습을 보는 것이 무엇보다 짜릿하다."},
+ {s:"AVD",t:"관계가 너무 빠르게 가까워지면, 좋으면서도 이상하게 한 발 물러나 혼자만의 시간을 갖고 싶어진다."},
+ {s:"SUB",t:"상대가 내 손목을 잡아 머리 위로 눌러 고정하는 순간을 상상하면 심장이 빨리 뛴다."},
+ {s:"SSK",t:"누군가에게 들킬지도 모른다는 긴장감은 나에게 불안이 아니라 오히려 흥분을 키우는 요소다."},
+ {s:"PAC",t:"분위기가 한번 달아오르면 장소나 계획, 다음 날 일정보다 지금 이 순간의 충동을 따르는 편이다."},
+ {s:"TCH",r:1,t:"머릿속으로 구체적인 장면을 상상하는 것만으로도 직접 닿는 것 못지않게 쉽게 달아오른다."},
+ {s:"ANX",r:1,t:"연인과 며칠 동안 연락이 뜸해도, 우리 관계가 괜찮다는 믿음은 크게 흔들리지 않는다."},
+ {s:"DOM",r:1,t:"스킨십을 할 때 내가 주도권을 잡기보다는, 상대가 이끄는 대로 맞춰가는 쪽이 훨씬 편하다."},
+ {s:"AVD",r:1,t:"힘든 일이 생기면 연인에게 기대고 도움을 청하는 것이 나에게는 자연스럽고 편안하다."},
+ {s:"SUB",t:"믿을 수 있는 사람에게 통제권을 완전히 넘겼을 때, 이상하게도 묘한 해방감을 느낀다."},
+ {s:"SSK",r:1,t:"결국 가장 만족스러운 밤은 익숙한 사람과 익숙한 공간에서, 익숙한 방식으로 보내는 밤이다."},
+ {s:"PAC",t:"좋아하는 사람 앞에서 밀당은 시간 낭비라고 생각한다. 원하면 원한다고 바로 표현하는 게 맞다."},
+ {s:"TCH",t:"분위기를 잡을 때 말은 필요 없다. 눈빛과 손길만으로 충분히 마음이 전달된다고 느낀다."},
+ {s:"SUB",r:1,t:"상대가 나를 강하게 리드하거나 지시하려 들면, 설레기보다는 반발심이 먼저 든다."},
+ {s:"DOM",t:"연인과의 밤에서 분위기, 속도, 다음 단계를 내가 설계하고 이끌어야 만족감이 크다."}
+];
+const SEC_LABEL={ANX:"PART · 애착",AVD:"PART · 애착",DOM:"PART · 권력 역동",SUB:"PART · 권력 역동",PAC:"PART · 열정",TCH:"PART · 자극",SSK:"PART · 감각 추구"};
+
+/* ================= 4글자 축 ================= */
+const AX=[
+ {a:"L",b:"F",an:"리드",bn:"팔로우",title:"주도권"},
+ {a:"H",b:"S",an:"직진",bn:"밀당",title:"온도"},
+ {a:"T",b:"W",an:"터치",bn:"속삭임",title:"자극"},
+ {a:"A",b:"C",an:"모험",bn:"안정",title:"취향"}
+];
+const TRAIT={
+  L:"분위기와 속도를 직접 조절해야 직성이 풀려요. 상대가 내 손끝에 반응하는 걸 볼 때 가장 짜릿해요.",
+  F:"이끌려가는 쪽이 더 깊이 빠져요. 상대가 나를 원한다는 게 느껴질 때 스위치가 켜져요.",
+  H:"끌리면 바로 가요. 계산은 나중이고, 그 순간의 열기가 전부예요. (Sternberg의 '열정' 요소가 강한 편)",
+  S:"천천히 달아오르는 타입이에요. 애태우는 시간이 길수록 그 끝이 더 강렬해요.",
+  T:"말보다 몸이 먼저 반응해요. 숨결, 체온, 손의 무게 같은 감각에 약해요.",
+  W:"귓가에 닿는 목소리, 한밤의 문자 한 줄에 무너져요. 머리가 먼저 흥분하는 타입이에요.",
+  A:"낯선 장소, 새로운 시도에 심장이 뛰어요. 감각추구(Zuckerman) 성향이 높은 편이에요.",
+  C:"익숙한 사람과 깊어지는 게 좋아요. 믿음이 쌓일수록 더 대담해지는 타입이에요."
+};
+
+/* ================= 16유형 ================= */
+const TYPES = {
+  LHTA:{e:"🔥",n:"야생의 지배자",s:"원하면 가진다, 망설임 없는 불꽃",tags:["#본능충실","#주도권장악","#어디서든"],
+    p:"추진력 하나로 인생을 사는 사람. 결정이 빠르고 에너지가 넘쳐서 주변을 끌고 다녀요. 가만히 있는 걸 못 참고, 지루함이 제일 큰 적이에요.",
+    night:"분위기가 무르익으면 생각보다 손이 먼저 나가요. 장소도 시간도 별로 중요하지 않고, 상대를 내 페이스로 끌어들이는 데 천재적이에요. 다만 가끔은 브레이크도 필요해요.",
+    ideal:"당신의 불꽃을 겁내지 않고 온몸으로 받아주는 사람. 수줍어 보이지만 막상 시작되면 당신보다 더 뜨거워지는, 반전 있는 사람에게 완전히 빠져요."},
+  LHTC:{e:"🐺",n:"뜨거운 독점가",s:"내 사람은 내 품 안에서만",tags:["#질투폭발","#소유욕","#한사람만"],
+    p:"한번 마음 준 사람에겐 끝까지 가는 의리파. 책임감이 강하고 보호 본능이 넘쳐요. 대신 내 영역을 침범당하는 건 절대 못 참아요.",
+    night:"익숙한 공간에서 상대를 온전히 내 것으로 만드는 순간을 즐겨요. 강하게 리드하지만 그 안에 집착 같은 다정함이 섞여 있어요. 상대가 다른 사람 얘기만 해도 그날 밤은 더 거칠어져요.",
+    ideal:"당신만 바라보고 당신 품에 안기는 걸 제일 좋아하는 사람. 질투를 귀엽다고 웃어 넘겨주고, '나 너 거잖아'라고 말해주는 사람이에요."},
+  LHWA:{e:"🎭",n:"말로 홀리는 모험가",s:"한마디로 분위기를 뒤집는 사람",tags:["#플러팅천재","#말빨","#위험한매력"],
+    p:"말을 잘하고 센스가 넘쳐서 어디서든 주목받는 사람. 호기심이 많아 새로운 사람, 새로운 경험을 끊임없이 찾아다녀요.",
+    night:"귓가에 대놓고 원하는 걸 말해서 상대 얼굴을 빨갛게 만드는 데 선수예요. 예상 못한 장소, 예상 못한 타이밍에 던지는 한마디가 당신의 무기예요.",
+    ideal:"당신의 야한 농담에 얼굴 붉히면서도 피하지 않는 사람. 처음엔 놀라도 결국 '그래서, 어디로 갈 건데?'라고 물어오는 사람에게 끌려요."},
+  LHWC:{e:"🍷",n:"직진 로맨티스트",s:"사랑한다는 말을 아끼지 않는 사람",tags:["#표현왕","#확신을주는","#로맨스장인"],
+    p:"감정에 솔직하고 따뜻해요. 좋으면 좋다, 보고 싶으면 보고 싶다고 말하는 사람. 관계에서 확신을 주는 걸 중요하게 생각해요.",
+    night:"분위기를 직접 만드는 타입이에요. 조명, 음악, 와인까지 세팅하고, 그 위에 낮은 목소리로 고백 같은 말을 얹어요. 사랑이 전제된 밤일 때 가장 뜨거워져요.",
+    ideal:"당신이 준비한 모든 걸 온전히 느껴주고 '너라서 좋아'라고 말해주는 사람. 수줍게 당신에게 기대오는 사람이 이상형이에요."},
+  LSTA:{e:"🐍",n:"느긋한 사냥꾼",s:"서두르지 않아도 결국 손에 넣는다",tags:["#여유만만","#계산된유혹","#한번물면"],
+    p:"겉으론 느긋하지만 속으론 모든 걸 계산하고 있어요. 관찰력이 뛰어나고, 원하는 걸 얻기 위해 기다릴 줄 아는 전략가예요.",
+    night:"천천히, 아주 천천히 상대를 무너뜨리는 걸 즐겨요. 손끝으로 거리를 재다가 상대가 먼저 애원하게 만드는 게 특기예요. 새로운 자극을 은근슬쩍 제안하는 것도 잘해요.",
+    ideal:"당신의 느린 템포에 속이 타면서도 끝까지 기다려주는 사람. 결국 참지 못하고 먼저 다가오는, 감정이 얼굴에 다 드러나는 사람에게 약해요."},
+  LSTC:{e:"🕯",n:"애태우는 장인",s:"한 사람을 깊게, 천천히, 오래",tags:["#디테일장인","#느린손","#깊은밤"],
+    p:"섬세하고 꼼꼼해요. 상대의 작은 반응까지 기억하고, 관계를 공들여 쌓아가는 사람. 신뢰가 생기기 전엔 쉽게 마음을 열지 않아요.",
+    night:"익숙한 사람의 모든 반응을 알고 있어서, 어디를 어떻게 하면 무너지는지 정확히 알아요. 서두르지 않고 밤을 길게 쓰는 사람이에요.",
+    ideal:"당신에게만 모든 걸 보여주는 사람. 처음엔 수줍지만 당신 앞에서만 점점 솔직하고 대담해지는 사람이 이상형이에요."},
+  LSWA:{e:"🎩",n:"위험한 설계자",s:"머릿속엔 늘 다음 시나리오가 있다",tags:["#지적섹시","#밀당고수","#판타지설계"],
+    p:"머리가 좋고 상상력이 풍부해요. 계획 세우는 걸 좋아하고, 사람의 심리를 읽는 데 능숙해요. 쉽게 속을 드러내지 않는 미스터리한 사람.",
+    night:"하루 종일 문자로 분위기를 쌓아 올리고, 밤에 그걸 현실로 만드는 타입이에요. 역할극이나 낯선 시나리오처럼 머리로 즐기는 자극에 강해요.",
+    ideal:"당신의 시나리오에 기꺼이 올라타는 사람. 겉보기엔 평범하지만 당신 앞에서 '오늘은 뭐 할 건데?'라며 눈을 반짝이는 사람에게 빠져요."},
+  LSWC:{e:"🥃",n:"품격 있는 리더",s:"낮은 목소리, 흔들림 없는 여유",tags:["#어른의연애","#목소리깡패","#젠틀한리드"],
+    p:"차분하고 성숙해요. 감정 기복이 적고, 상대를 존중하면서도 확실하게 이끌어요. 주변에서 '어른스럽다'는 말을 자주 들어요.",
+    night:"서두르는 법이 없어요. 깊은 대화로 시작해서, '천천히 해도 돼'라는 말 한마디로 상대의 긴장을 녹여요. 존중과 리드 사이의 균형이 당신의 매력이에요.",
+    ideal:"당신 앞에서 안심하고 모든 걸 맡기는 사람. 평소엔 똑 부러지지만 당신 앞에서만 기대고 싶어지는 사람이 이상형이에요."},
+  FHTA:{e:"🍒",n:"불붙는 탐험가",s:"이끌어주면 어디든 따라간다",tags:["#반전매력","#호기심폭발","#열정적"],
+    p:"밝고 에너지 넘치는 분위기 메이커. 겁이 없고 새로운 걸 좋아해요. 감정이 솔직하게 표정에 다 드러나는 타입이에요.",
+    night:"누군가 이끌어주면 놀라울 만큼 대담해져요. 낯선 장소, 처음 해보는 것에 '한번 해볼까?'가 먼저 나오는 사람. 반응이 솔직해서 상대를 더 불태우게 만들어요.",
+    ideal:"확신 있게 당신 손을 잡고 어디든 데려가는 사람. 거침없이 리드하면서도 당신의 '좋아'를 놓치지 않는 사람에게 완전히 빠져요."},
+  FHTC:{e:"🧸",n:"안기는 불꽃",s:"품에 안기면 녹아버리는 사람",tags:["#스킨십러버","#애교만렙","#껌딱지"],
+    p:"다정하고 애정이 넘쳐요. 사랑받고 있다는 확신이 있을 때 가장 빛나는 사람. 좋아하는 사람 옆에선 한시도 떨어지지 않으려 해요.",
+    night:"안기는 걸 너무 좋아해서 시작은 늘 포옹부터예요. 익숙한 사람의 품에서 경계가 완전히 풀리면 생각보다 훨씬 뜨거워져요.",
+    ideal:"넓은 품으로 꽉 안아주고, 당신을 독차지하고 싶어 하는 사람. 살짝 질투도 하고 '내 거'라고 말해주는 사람에게 약해요."},
+  FHWA:{e:"💋",n:"자유로운 뮤즈",s:"원하는 말을 해주면 뭐든 될 수 있다",tags:["#분위기여신","#감성폭발","#예측불가"],
+    p:"감수성이 풍부하고 자유로운 영혼이에요. 분위기에 쉽게 물들고, 예술적인 감각이 있어요. 틀에 갇히는 걸 싫어해요.",
+    night:"귓가에 들리는 한마디에 바로 스위치가 켜지는 사람. 상대가 원하는 걸 말로 들으면 그 역할에 빠져드는 걸 즐겨요. 매번 다른 밤을 꿈꿔요.",
+    ideal:"당신에게 대담한 말을 거침없이 속삭이는 사람. 말로 리드하면서 당신을 매번 새로운 곳으로 데려가는 사람이 이상형이에요."},
+  FHWC:{e:"🌹",n:"순정 불꽃",s:"한 사람에게만 타오르는 사람",tags:["#일편단심","#사랑꾼","#고백에약함"],
+    p:"순수하고 진심이 가득해요. 한 사람을 정하면 다른 사람은 눈에 안 들어오는 타입. 상처받기 쉽지만 그만큼 깊게 사랑해요.",
+    night:"사랑한다는 말을 들으면 모든 게 허락되는 사람이에요. 마음이 통한 상대 앞에서는 수줍음 따윈 잊고 누구보다 뜨거워져요.",
+    ideal:"매일 사랑한다고 말해주고 그 말을 행동으로 증명하는 사람. 확신을 주면서 당신을 리드하는 다정한 사람에게 빠져요."},
+  FSTA:{e:"🦋",n:"호기심 많은 나비",s:"천천히, 하지만 깊숙이 빠져든다",tags:["#은근대담","#탐색중","#알고보면"],
+    p:"조용하지만 호기심이 많아요. 겉으론 얌전해 보여도 속에는 해보고 싶은 게 가득한 사람. 마음을 열기까지 시간이 걸려요.",
+    night:"처음엔 조심스럽지만 한번 익숙해지면 새로운 걸 먼저 궁금해하는 반전형이에요. 천천히 달아오르는 감각을 즐기고, 상대가 기다려줄수록 더 멀리 가요.",
+    ideal:"서두르지 않고 당신의 속도를 기다려주는 사람. 그러면서도 새로운 세계로 은근히 이끌어주는 여유 있는 사람이 이상형이에요."},
+  FSTC:{e:"🍯",n:"달콤한 고양이",s:"쉽게 안 주지만 한번 주면 녹는다",tags:["#츤데레","#밀당본능","#길들여지는중"],
+    p:"도도하고 독립적이에요. 아무에게나 곁을 내주지 않지만, 내 사람에게는 누구보다 애교가 많아요. 혼자만의 시간도 중요한 사람.",
+    night:"쓰다듬어주는 손길에 천천히 길들여지는 타입. 익숙한 공간, 익숙한 손길에서 가장 편안하고 가장 야해져요. 밀당은 침대 위에서도 계속돼요.",
+    ideal:"당신의 도도함을 재밌어하며 끈기 있게 다가오는 사람. 다정하지만 확실하게 리드하는 사람에게 결국 꼬리를 내려요."},
+  FSWA:{e:"🌙",n:"몽상하는 요정",s:"상상 속에선 이미 수백 번의 밤",tags:["#상상력만렙","#판타지","#은밀한취향"],
+    p:"상상력이 풍부하고 감성적이에요. 혼자 있는 시간에 머릿속으로 온갖 시나리오를 그려요. 겉으로 드러내진 않지만 속은 누구보다 다채로워요.",
+    night:"머릿속에 그려둔 장면을 현실로 만들어줄 사람을 기다려요. 은밀한 문자, 낮은 목소리로 시작되는 밤에 약하고, 한번 열리면 상상 이상의 모습이 나와요.",
+    ideal:"당신의 비밀스러운 상상을 들어주고 '그거 해보자'라고 말해주는 사람. 지적이면서 대담하게 리드하는 사람이 이상형이에요."},
+  FSWC:{e:"🫧",n:"수줍은 낭만가",s:"얼굴은 빨개져도 마음은 이미",tags:["#부끄럼쟁이","#감성충만","#천천히깊게"],
+    p:"섬세하고 배려심 많은 사람. 감정을 쉽게 드러내지 않지만 마음속은 늘 로맨틱한 상상으로 가득해요. 신뢰가 가장 중요해요.",
+    night:"수줍음이 많아서 시작이 어렵지만, 믿을 수 있는 사람이 다정한 말로 이끌어주면 놀라울 만큼 솔직해져요. 천천히 깊어지는 밤을 좋아해요.",
+    ideal:"당신의 수줍음을 귀여워하며 서두르지 않는 사람. 낮은 목소리로 안심시키면서 확실하게 리드하는 어른스러운 사람에게 빠져요."}
+};
+
+/* ================= 성적 취향 ================= */
+const KINK={
+ S:{n:"S 성향 · 도미넌트",e:"⛓",
+   d:"주도하고 통제하는 데서 흥분을 느끼는 성향이에요. 상대의 반응을 끌어내고 그 밤의 흐름을 설계하는 역할이 당신에게 가장 자연스러워요. 진짜 도미넌트의 매력은 힘이 아니라 '상대를 읽는 능력'과 '책임감'에 있어요.",
+   best:"M 성향 · 서브미시브", bestWhy:"통제권을 기꺼이 넘기고 싶어 하는 사람과 만날 때 서로의 욕구가 정확히 맞물려요.",
+   avoid:"강한 S 성향끼리", avoidWhy:"둘 다 주도권을 원하면 침대 밖에서도 권력 싸움이 이어지기 쉬워요."},
+ M:{n:"M 성향 · 서브미시브",e:"🎀",
+   d:"신뢰하는 사람에게 통제권을 넘길 때 해방감과 흥분을 느끼는 성향이에요. 생각을 멈추고 감각에만 집중하게 되는 순간을 좋아해요. 맡긴다는 건 약함이 아니라 깊은 신뢰의 표현이에요.",
+   best:"S 성향 · 도미넌트", bestWhy:"확신 있게 리드하면서도 당신의 신호를 놓치지 않는 사람이 최고의 파트너예요.",
+   avoid:"경계를 무시하는 사람", avoidWhy:"통제를 맡기는 성향일수록 '싫어'와 안전어를 존중하지 않는 사람은 반드시 피해야 해요."},
+ SW:{n:"스위치",e:"🔁",
+   d:"상황과 상대에 따라 리드하기도, 맡기기도 하는 성향이에요. 오늘은 지배하고 내일은 복종하는, 양쪽의 즐거움을 모두 아는 사람. 그만큼 상대에 맞춰 관계의 폭을 넓힐 수 있어요.",
+   best:"스위치 또는 유연한 상대", bestWhy:"역할을 바꿔가며 즐길 수 있는 사람과 가장 다채로운 관계를 만들어요.",
+   avoid:"한 가지 역할만 고집하는 사람", avoidWhy:"당신의 한쪽 면만 인정받으면 금방 답답함을 느낄 수 있어요."},
+ V:{n:"바닐라",e:"🍦",
+   d:"지배와 복종 같은 권력 역동보다는, 평등하고 다정한 교감에서 만족을 느끼는 성향이에요. 강도보다 친밀감과 정서적 연결을 중요하게 생각해요.",
+   best:"바닐라 · 정서 중심형", bestWhy:"속도와 강도에 대한 기대가 비슷한 사람과 있을 때 가장 편안하게 열려요.",
+   avoid:"강한 S 또는 M 성향", avoidWhy:"성적 욕구의 방향이 크게 다르면 한쪽이 계속 맞춰주게 되고 만족도가 떨어지기 쉬워요."}
+};
+
+/* ================= 애착 ================= */
+const ATT={
+ SEC:{n:"안정형",e:"🌳",d:"친밀함을 편안하게 받아들이고, 혼자 있는 시간도 불안하지 않아요. 갈등이 생겨도 관계 자체를 의심하지 않고 대화로 풀어가는 힘이 있어요. 연애 시장에서 가장 '좋은 파트너'로 꼽히는 유형이에요.",
+   avoid:"조종하려는 사람",avoidWhy:"안정형은 상대를 선의로 해석하는 편이라, 공감 없이 이용하려는 사람(다크 트라이어드 성향)을 늦게 알아차릴 수 있어요."},
+ ANX:{n:"불안형",e:"🌊",d:"사랑받고 있다는 확인이 자주 필요하고, 작은 신호에도 마음이 크게 흔들려요. 그만큼 사랑할 때 누구보다 뜨겁고 헌신적이에요. 불안은 '사랑이 소중해서' 생기는 감정이에요.",
+   avoid:"회피형",avoidWhy:"불안형이 다가갈수록 회피형은 물러나고, 물러날수록 더 매달리게 되는 '추적-철수(요구-철수)' 악순환에 빠지기 쉬워요(Christensen & Heavey, 1990)."},
+ AVD:{n:"회피형",e:"🧊",d:"독립성이 강하고, 너무 가까워지면 숨이 막히는 느낌을 받아요. 감정 표현이 서툴러 차가워 보이지만, 사실은 상처받지 않으려고 거리를 두는 거예요.",
+   avoid:"불안형",avoidWhy:"끊임없는 확인 요구가 당신에겐 압박으로 느껴져 더 멀어지고, 상대는 더 불안해지는 악순환이 생기기 쉬워요."},
+ FEA:{n:"혼란형 (공포-회피형)",e:"🌪",d:"가까워지고 싶은 마음과 상처받을까 두려운 마음이 동시에 있어요. 다가갔다 밀어냈다를 반복하게 되지만, 그만큼 감정의 깊이가 깊은 사람이에요.",
+   avoid:"감정 기복이 큰 사람",avoidWhy:"불안정한 상대를 만나면 당신의 두려움이 더 커져요. 일관되고 예측 가능한 사람이 필요해요."}
+};
+
+/* ================= 사주 ================= */
+const STEM="갑을병정무기경신임계",BR="자축인묘진사오미신유술해",STEM_H="甲乙丙丁戊己庚辛壬癸",BR_H="子丑寅卯辰巳午未申酉戌亥";
+const ZOD=["쥐","소","호랑이","토끼","용","뱀","말","양","원숭이","닭","개","돼지"];
+const EL=["목","목","화","화","토","토","금","금","수","수"];
+const EL_N={목:"나무(木)",화:"불(火)",토:"흙(土)",금:"쇠(金)",수:"물(水)"};
+const GEN_BY={목:"수",화:"목",토:"화",금:"토",수:"금"};
+const STEM_TXT=[
+ ["하늘로 곧게 뻗은 큰 나무","자존심 강하고 곧은 리더형. 한번 정하면 흔들리지 않아요.","연애도 정면 돌파. 좋아하면 숨기지 못하고 먼저 고백하는 타입이에요. 리드하는 걸 좋아하지만 의외로 칭찬에 약해요."],
+ ["바람에 흔들리는 꽃과 덩굴","유연하고 사교적이에요. 어떤 사람과도 잘 어울려요.","상대에 맞춰 자연스럽게 감기는 매력이 있어요. 애교가 많고 스킨십으로 마음을 표현해요. 은근히 끼가 많다는 소리를 들어요."],
+ ["한낮의 태양","화끈하고 솔직해요. 있는 그대로 다 보여주는 사람.","연애 온도 최고치. 사랑할 땐 활활 타오르고, 표현에 거침이 없어요. 대신 식을 땐 빨리 식으니 꾸준한 자극이 필요해요."],
+ ["어둠 속 촛불","섬세하고 은근해요. 조용히 사람을 끌어당기는 힘이 있어요.","겉으론 차분해도 속은 뜨거운 반전형. 은은한 유혹의 달인이고, 밤이 깊어질수록 매력이 살아나요."],
+ ["우뚝 선 큰 산","듬직하고 믿음직해요. 쉽게 흔들리지 않아요.","진도는 느리지만 한번 마음 주면 깊고 오래가요. 무뚝뚝해 보여도 내 사람에겐 묵직하게 다 내어주는 타입이에요."],
+ ["기름진 논밭","포용력 있고 따뜻해요. 사람을 품는 그릇이 커요.","상대를 챙기고 맞춰주는 데서 기쁨을 느껴요. 받아주는 쪽 같지만, 사실은 상대를 길들이는 쪽이에요."],
+ ["단단한 바위와 칼","결단력 있고 쿨해요. 맺고 끊음이 확실한 사람.","밀당은 귀찮아요. 좋으면 좋고 싫으면 끝. 겉은 차가워도 내 사람 앞에선 의외로 거칠고 뜨거운 면이 나와요."],
+ ["빛나는 보석","예민하고 미적 감각이 뛰어나요. 완벽주의 기질이 있어요.","눈이 높고 까다로운 편. 하지만 한번 빠지면 헌신적이에요. 분위기, 향기, 디테일에 따라 반응이 확 달라져요."],
+ ["끝없이 넓은 바다","자유롭고 스케일이 커요. 생각이 깊고 포용력이 있어요.","깊이를 알 수 없는 매력으로 사람을 빠지게 해요. 자유로운 연애를 즐기고, 새로운 경험에 열려 있어요. 바람기 주의 신호가 있어요 😉"],
+ ["새벽의 이슬비","감성적이고 직관이 예리해요. 신비로운 분위기가 있어요.","촉촉하게 스며드는 연애를 해요. 겉으론 조용해도 상상력이 풍부해서, 은밀한 감성 자극에 가장 약한 일간이에요."]
+];
+const SAMHAP=[[8,0,4],[5,9,1],[2,6,10],[11,3,7]];
+const DOHWA=[0,3,6,9];
+function jdn(y,m,d){const a=Math.floor((14-m)/12),Y=y+4800-a,M=m+12*a-3;return d+Math.floor((153*M+2)/5)+365*Y+Math.floor(Y/4)-Math.floor(Y/100)+Math.floor(Y/400)-32045}
+function saju(y,m,d){const di=(jdn(y,m,d)+49)%60,sy=(m<2||(m===2&&d<4))?y-1:y;
+  return{ds:di%10,db:di%12,ys:((sy-4)%10+10)%10,yb:((sy-4)%12+12)%12,sy}}
+
+/* ================= 채점 ================= */
+function scoreAll(ans){
+  const sum={},n={};Object.keys(SCALES).forEach(k=>{sum[k]=0;n[k]=0});
+  ITEMS.forEach((it,i)=>{let v=ans[i];if(it.r)v=6-v;sum[it.s]+=v;n[it.s]++});
+  const sc={};Object.keys(SCALES).forEach(k=>sc[k]=Math.round((sum[k]/n[k]-1)/4*100));
+  return sc;
+}
+function classify(sc){
+  const code=(sc.DOM>=sc.SUB?"L":"F")+(sc.PAC>=50?"H":"S")+(sc.TCH>=50?"T":"W")+(sc.SSK>=50?"A":"C");
+  const kink=sc.DOM>=60&&sc.SUB>=60?"SW":sc.DOM>=60&&sc.DOM>=sc.SUB?"S":sc.SUB>=60?"M":"V";
+  const att=sc.ANX>50?(sc.AVD>50?"FEA":"ANX"):(sc.AVD>50?"AVD":"SEC");
+  return{code,kink,att};
+}
+const flip=(c,ix)=>c.split('').map((ch,i)=>ix.includes(i)?(ch===AX[i].a?AX[i].b:AX[i].a):ch).join('');
+
+/* ================= 상태 ================= */
+const $=id=>document.getElementById(id);
+let idx=0,ans=[],birth=null,nick="",gender="선택안함",consent=false,lastRow=null;
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));$(id).classList.add('on');
+  $('wrap').classList.toggle('wide',id==='s-admin');window.scrollTo(0,0)}
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2000)}
+
+function render(){
+  const it=ITEMS[idx];
+  $('bar').style.width=(idx/ITEMS.length*100)+'%';
+  $('qnum').textContent=`Q${String(idx+1).padStart(2,'0')} / ${ITEMS.length}`;
+  $('qsec').textContent=SEC_LABEL[it.s];
+  $('qtext').textContent=it.t;
+  $('likert').innerHTML='';
+  for(let v=1;v<=5;v++){const b=document.createElement('button');b.setAttribute('aria-label',v+'점');
+    if(ans[idx]===v)b.classList.add('picked');
+    b.onclick=()=>{[...$('likert').children].forEach(x=>x.classList.remove('picked'));b.classList.add('picked');ans[idx]=v;
+      setTimeout(()=>{idx++;idx<ITEMS.length?render():finish()},230)};
+    $('likert').appendChild(b)}
+}
+
+function finish(){
+  $('bar').style.width='100%';show('s-loading');
+  const msgs=["애착 패턴을 분석하는 중…","권력 역동 성향을 계산하는 중…","사주의 기운을 읽는 중…","당신의 이상형을 그리는 중…"];
+  let m=0;$('loadmsg').textContent=msgs[0];
+  const iv=setInterval(()=>{m++;if(msgs[m])$('loadmsg').textContent=msgs[m]},700);
+  setTimeout(()=>{clearInterval(iv);result()},2800);
+}
+
+function bar(label,l,r,v){return `<div class="ax"><div class="top"><span>${l}</span><span>${label}</span><span>${r}</span></div><div class="t"><i data-w="${v}"></i></div></div>`}
+
+function result(){
+  const sc=scoreAll(ans),{code,kink,att}=classify(sc),t=TYPES[code],K=KINK[kink],A=ATT[att];
+  $('rwho').textContent=nick?`${nick}님의 NIGHT TYPE`:'YOUR NIGHT TYPE';
+  $('rcode').textContent=code;$('remoji').textContent=t.e;$('rname').textContent=t.n;$('rsub').textContent=t.s;
+  $('rchips').innerHTML=`<span class="chip">${K.e} ${K.n}</span><span class="chip">${A.e} ${A.n}</span>`;
+  $('rtags').innerHTML=t.tags.map(x=>`<span>${x}</span>`).join('');
+  const lf=Math.round(sc.DOM/(sc.DOM+sc.SUB||1)*100);
+  $('raxis').innerHTML=
+    bar("주도권",`<b>L</b> 리드 ${lf}%`,`${100-lf}% 팔로우 <b>F</b>`,lf)+
+    bar("온도",`<b>H</b> 직진 ${sc.PAC}%`,`${100-sc.PAC}% 밀당 <b>S</b>`,sc.PAC)+
+    bar("자극",`<b>T</b> 터치 ${sc.TCH}%`,`${100-sc.TCH}% 속삭임 <b>W</b>`,sc.TCH)+
+    bar("취향",`<b>A</b> 모험 ${sc.SSK}%`,`${100-sc.SSK}% 안정 <b>C</b>`,sc.SSK);
+  $('rpers').textContent=t.p;
+  $('rtraits').innerHTML=code.split('').map(c=>`<li>${TRAIT[c]}</li>`).join('');
+  $('rnight').textContent=t.night;
+
+  $('kName').textContent=K.e+' '+K.n;$('kDesc').textContent=K.d;
+  $('kBars').innerHTML=bar("",`지배 욕구 (S)`,`${sc.DOM}점`,sc.DOM)+bar("",`복종 욕구 (M)`,`${sc.SUB}점`,sc.SUB);
+  $('kWhy').textContent="이 검사의 S/M은 고통이 아닌 '권력 역동(D/s)'을 기준으로 지배·복종 욕구를 각각 측정해요. 두 점수가 모두 높으면 스위치, 모두 낮으면 바닐라예요. Wismeijer & van Assen(2013)의 연구에서 BDSM 실천자들은 일반 집단보다 신경증이 낮고 애착 안정성과 주관적 행복감이 높게 나타나, 이런 취향이 심리적 문제의 신호가 아니라는 점을 보여줬어요. 어떤 취향이든 핵심은 명확한 동의, 안전어, 그리고 사후 케어예요.";
+  $('aName').textContent=A.e+' '+A.n;$('aDesc').textContent=A.d+` (애착 불안 ${sc.ANX}점 · 애착 회피 ${sc.AVD}점)`;
+
+  const best=flip(code,[0]),worst=flip(code,[0,1,2,3]);
+  $('mCode').textContent=best;$('mCodeN').textContent=TYPES[best].e+' '+TYPES[best].n;
+  $('mKink').textContent=K.best;$('mAttach').textContent='🌳 안정형 애착';
+  $('rideal').innerHTML=`<span class="k">이상형</span><br>${t.ideal}`;
+  $('mDesc').textContent=K.bestWhy+(att==="SEC"?" 안정형인 당신은 같은 안정형과 만날 때 가장 만족도 높은 관계를 만들어요.":" 특히 안정형 애착의 파트너는 당신의 불안이나 회피를 완화해 주는 '안전기지' 역할을 해줘요.");
+  $('mWhy').textContent="근거: 대인관계 원형모형(Kiesler, 1983)에서 지배-복종은 서로 반대일 때 상보적으로 끌리고, 나머지 성향은 유사성-매력 가설(Byrne, 1971; Montoya 외, 2008)에 따라 비슷할수록 잘 맞아요. 그래서 L/F만 반대이고 나머지 3글자가 같은 유형이 최고의 궁합이에요. 또한 애착 연구들은 어느 유형이든 안정형 파트너와 만날 때 관계 만족도가 높다고 보고해요.";
+
+  $('xCode').textContent=worst;$('xCodeN').textContent=TYPES[worst].e+' '+TYPES[worst].n;
+  $('xAttach').textContent=A.avoid;$('xKink').textContent=K.avoid;
+  $('xDesc').innerHTML=`<span class="k">애착</span> · ${A.avoidWhy}<br><br><span class="k">취향</span> · ${K.avoidWhy}<br><br><span class="k">유형</span> · ${worst}는 4가지 성향이 모두 정반대예요. 처음엔 신선한 끌림이 있지만, 속도·표현 방식·취향이 계속 엇갈려 지치기 쉬워요.`;
+  $('xFlags').innerHTML=["처음부터 지나치게 칭찬하고 빠르게 몰아붙이는 사람 (러브바밍)","당신의 '싫어'나 안전어를 장난으로 넘기는 사람","공감 없이 자기 이익만 챙기고 거짓말이 잦은 사람","대화 중 비난·경멸·방어·담쌓기를 반복하는 사람","당신을 친구나 가족에게서 고립시키려는 사람"].map(x=>`<li>${x}</li>`).join('');
+  $('xWhy').textContent="근거: 다크 트라이어드(나르시시즘·마키아벨리즘·사이코패시; Paulhus & Williams, 2002) 성향은 단기적 매력은 높지만 착취적 관계와 관련이 있고, Gottman(1994)은 비난·경멸·방어·담쌓기를 관계 붕괴의 가장 강력한 예측 신호로 꼽았어요.";
+
+  const [y,m,d]=birth,s=saju(y,m,d),el=EL[s.ds],st=STEM_TXT[s.ds];
+  $('sDay').textContent=STEM[s.ds]+BR[s.db]+'일주';$('sDayEl').textContent=STEM_H[s.ds]+BR_H[s.db]+' · '+EL_N[el];
+  $('sZodiac').textContent=ZOD[s.yb]+'띠';$('sYear').textContent=STEM[s.ys]+BR[s.yb]+'년생 ('+s.sy+')';
+  $('sStem').innerHTML=`<span class="k">${STEM[s.ds]}${el}(${STEM_H[s.ds]}) · ${st[0]}</span><br>${st[1]}`;
+  $('sLove').textContent=st[2];
+  const dh=[DOHWA.includes(s.db)?'일지':'',DOHWA.includes(s.yb)?'년지':''].filter(Boolean);
+  $('sDohwa').innerHTML=dh.length?`🌸 <b>도화살 있음</b> (${dh.join('·')})<br>타고난 이성운! 가만히 있어도 사람이 꼬이는 매력이 있어요.${dh.length>1?' 도화가 두 개나 있어서 인기가 넘치는 사주예요.':''}`:`🌿 <b>도화살 없음</b><br>대신 진득하게 오래가는 인연운. 한번 빠지면 깊게 가는 사람이에요.`;
+  const gen=GEN_BY[el],grp=SAMHAP.find(g=>g.includes(s.yb)),mates=grp.filter(b=>b!==s.yb).map(b=>ZOD[b]+'띠');
+  $('sMatch').innerHTML=`<span class="k">사주 속 이상형</span><br>당신을 살려주는 기운은 <b>${EL_N[gen]}</b>. ${gen}의 기운을 가진 사람 옆에서 가장 편안하고 대담해져요. 띠로는 <b>${mates.join(', ')}</b>와 삼합(三合), 찰떡궁합이에요.`;
+
+  show('s-result');
+  setTimeout(()=>document.querySelectorAll('#s-result .ax i').forEach(i=>i.style.width=i.dataset.w+'%'),100);
+
+  lastRow={ts:new Date().toISOString(),gender,birthYear:y,age:new Date().getFullYear()-y,code,kink,attach:att,
+    ANX:sc.ANX,AVD:sc.AVD,DOM:sc.DOM,SUB:sc.SUB,PAC:sc.PAC,TCH:sc.TCH,SSK:sc.SSK,
+    dayPillar:STEM[s.ds]+BR[s.db],dayElement:el,zodiac:ZOD[s.yb],dohwa:dh.length>0,items:ans.slice()};
+  saveResponse(lastRow);
+
+  $('share').onclick=async()=>{
+    const txt=`🔞 나의 이상형은? 검사 결과\n${code} ${t.e} ${t.n}\n${K.e} ${K.n} · ${A.e} ${A.n}\n☯ ${STEM[s.ds]}${BR[s.db]}일주 · ${ZOD[s.yb]}띠${dh.length?' · 도화살 🌸':''}\n💘 나와 맞는 유형: ${best}\n너의 밤 유형도 알아봐!`;
+    const url=location.href.split('#')[0];if(navigator.share){try{await navigator.share({title:'나의 이상형은?',text:txt,url});return}catch(e){if(e.name==='AbortError')return}}
+    try{await navigator.clipboard.writeText(txt+'\n'+url);toast('공유 문구가 복사됐어요 💋')}catch(e){toast('복사가 지원되지 않는 환경이에요')}
+  };
+}
+
+/* ================= 설정 =================
+   구글 Apps Script 웹앱 URL을 아래에 붙여넣으세요. (설치방법.md 참고)
+   비워두면 검사는 정상 작동하고 응답만 저장되지 않아요. */
+const SCRIPT_URL = "";
+
+/* ================= 저장 ================= */
+async function saveResponse(row){
+  if(!consent){$('savedNote').textContent='응답 저장에 동의하지 않아 결과가 저장되지 않았어요.';return}
+  if(!SCRIPT_URL){$('savedNote').textContent='(저장소 미연결 — 관리자가 SCRIPT_URL을 설정해야 저장돼요)';return}
+  $('savedNote').textContent='응답 저장 중…';
+  try{
+    await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(row)});
+    $('savedNote').textContent='✓ 익명 응답이 저장됐어요. 참여해 주셔서 감사해요.';
+  }catch(e){$('savedNote').textContent='응답을 저장하지 못했어요. 네트워크를 확인해 주세요.'}
+}
+
+/* ================= 관리자 (주소 끝에 #admin) ================= */
+let adminRows=[];
+function openAdmin(){show('s-admin');$('adminBody').innerHTML=`<div class="sec" style="max-width:420px"><h3>관리자 로그인</h3>
+  <input type="text" id="akey" placeholder="관리자 비밀번호 (Code.gs의 ADMIN_KEY)" autocomplete="off">
+  <button class="btn primary" id="alogin" style="margin-top:10px">데이터 불러오기</button><div class="err" id="aerr" style="margin-top:8px"></div></div>`;
+  let saved='';try{saved=sessionStorage.getItem('akey')||''}catch(e){}
+  $('akey').value=saved;$('alogin').onclick=loadAdmin;if(saved)loadAdmin();}
+async function loadAdmin(){
+  const key=$('akey').value.trim();if(!SCRIPT_URL){$('aerr').textContent='index.html의 SCRIPT_URL이 비어 있어요.';return}
+  $('aerr').textContent='불러오는 중…';
+  try{
+    const r=await fetch(SCRIPT_URL+'?key='+encodeURIComponent(key));const j=await r.json();
+    if(j.error){$('aerr').textContent='비밀번호가 맞지 않아요.';return}
+    try{sessionStorage.setItem('akey',key)}catch(e){}
+    adminRows=j.rows.map(o=>Object.assign(o,{items:Array.from({length:ITEMS.length},(_,i)=>o['Q'+(i+1)])}));renderAdmin();
+  }catch(e){$('aerr').textContent='불러오지 못했어요. SCRIPT_URL과 배포 설정을 확인해 주세요.'}
+}
+$('closeAdmin').onclick=()=>{history.replaceState(null,'',location.pathname);show('s-intro')};
+window.addEventListener('hashchange',()=>{if(location.hash==='#admin')openAdmin()});
+if(location.hash==='#admin')setTimeout(openAdmin,0);
+
+function distHTML(title,counts,labels){
+  const tot=Object.values(counts).reduce((a,b)=>a+b,0)||1;
+  const rows=Object.entries(counts).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="dr"><span>${labels?labels(k):k}</span><div class="t"><i style="width:${v/tot*100}%"></i></div><span class="v">${v} · ${Math.round(v/tot*100)}%</span></div>`).join('');
+  return `<div class="sec"><h3>${title}</h3><div class="dist">${rows||'<span class="empty">데이터 없음</span>'}</div></div>`;
+}
+const cnt=(k)=>adminRows.reduce((o,r)=>{const v=r[k]??'-';o[v]=(o[v]||0)+1;return o},{});
+const ageGroup=a=>a<20?'10대':a<30?'20대':a<40?'30대':a<50?'40대':'50대+';
+function renderAdmin(){
+  const N=adminRows.length;
+  if(!N){$('adminBody').innerHTML='<div class="empty">아직 저장된 응답이 없어요.</div>';return}
+  const avg=k=>Math.round(adminRows.reduce((a,r)=>a+(+r[k]||0),0)/N);
+  const ages=adminRows.reduce((o,r)=>{const g=ageGroup(r.age);o[g]=(o[g]||0)+1;return o},{});
+  const sorted=adminRows.slice().sort((a,b)=>String(b.ts).localeCompare(String(a.ts)));
+  const cols=["ts","gender","age","code","kink","attach","ANX","AVD","DOM","SUB","PAC","TCH","SSK","dayPillar","zodiac","dohwa"];
+  $('adminBody').innerHTML=`
+   <div class="kpis">
+     <div class="kpi"><small>총 응답</small><b>${N}</b></div>
+     <div class="kpi"><small>평균 지배 욕구</small><b>${avg('DOM')}</b></div>
+     <div class="kpi"><small>평균 복종 욕구</small><b>${avg('SUB')}</b></div>
+     <div class="kpi"><small>평균 애착 불안</small><b>${avg('ANX')}</b></div>
+     <div class="kpi"><small>평균 애착 회피</small><b>${avg('AVD')}</b></div>
+     <div class="kpi"><small>평균 감각 추구</small><b>${avg('SSK')}</b></div>
+   </div>
+   <div class="grid2" style="margin-top:12px">
+     ${distHTML('16유형 분포',cnt('code'),k=>TYPES[k]?k+' '+TYPES[k].e:k)}
+     ${distHTML('성적 취향 분포',cnt('kink'),k=>KINK[k]?KINK[k].n.split(' · ')[0]:k)}
+     ${distHTML('애착 유형 분포',cnt('attach'),k=>ATT[k]?ATT[k].n.split(' ')[0]:k)}
+     ${distHTML('성별',cnt('gender'))}
+     ${distHTML('연령대',ages)}
+     ${distHTML('도화살',cnt('dohwa'),k=>k==='true'?'있음':'없음')}
+   </div>
+   <div class="sec" style="margin-top:12px"><h3>개별 응답 (최신순)</h3>
+     <div class="tbl"><table><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead>
+     <tbody>${sorted.map(r=>`<tr>${cols.map(c=>`<td>${c==='ts'?String(r.ts||'').slice(0,16).replace('T',' '):esc(r[c])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+     <p class="why">척도 점수는 0~100 (문항 평균을 환산). 원문항 응답(Q1~Q30, 1~5점)은 CSV에 포함돼요. kink: S/M/SW(스위치)/V(바닐라) · attach: SEC 안정/ANX 불안/AVD 회피/FEA 혼란.</p>
+   </div>`;
+}
+function esc(v){return String(v??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function toCSV(){
+  const base=["ts","gender","birthYear","age","code","kink","attach","ANX","AVD","DOM","SUB","PAC","TCH","SSK","dayPillar","dayElement","zodiac","dohwa"];
+  const qh=ITEMS.map((it,i)=>`Q${i+1}_${it.s}${it.r?'_R':''}`);
+  const q=v=>{const s=String(v??'');return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s};
+  return [base.concat(qh).join(',')].concat(adminRows.map(r=>base.map(k=>q(r[k])).concat((r.items||[]).map(q)).join(','))).join('\n');
+}
+$('csvCopy').onclick=async()=>{try{await navigator.clipboard.writeText(toCSV());toast('CSV가 복사됐어요')}catch(e){toast('복사할 수 없는 환경이에요')}};
+$('csvDown').onclick=()=>{const blob=new Blob(['\ufeff'+toCSV()],{type:'text/csv;charset=utf-8'});const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');a.href=u;a.download=`ideal-type-responses-${new Date().toISOString().slice(0,10)}.csv`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)};
+
+/* ================= 이벤트 ================= */
+$('yes19').onclick=()=>show('s-intro');
+$('no19').onclick=()=>show('s-minor');
+$('start').onclick=()=>show('s-birth');
+$('gender').onclick=e=>{const b=e.target.closest('button');if(!b)return;[...$('gender').children].forEach(x=>x.classList.remove('on'));b.classList.add('on');gender=b.dataset.v};
+const today=new Date();$('bdate').max=today.toISOString().slice(0,10);
+$('toQuiz').onclick=()=>{
+  const v=$('bdate').value;if(!v){$('err').textContent='생년월일을 입력해 주세요.';return}
+  const [y,m,d]=v.split('-').map(Number);
+  let age=today.getFullYear()-y;if(today.getMonth()+1<m||(today.getMonth()+1===m&&today.getDate()<d))age--;
+  if(age<19){show('s-minor');return}
+  $('err').textContent='';birth=[y,m,d];nick=$('nick').value.trim();consent=$('consent').checked;
+  idx=0;ans=[];render();show('s-quiz');
+};
+$('back').onclick=()=>{if(idx>0){idx--;render()}else show('s-birth')};
+$('retry').onclick=()=>{idx=0;ans=[];show('s-intro')};
+</script>
+</body>
+</html>
